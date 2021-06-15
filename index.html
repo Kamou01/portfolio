@@ -13,10 +13,23 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/cce18f0ce0.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
@@ -27,16 +40,16 @@
         />
       </div>
       <button class="nav-toggle" aria-label="toggle-navigation">
-        <span class="hambuger"></span> +
+        <span class="hambuger"></span><i class="fas fa-bars"></i>
       </button>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#home">Home</a></li>
           <li class="nav__item"><a href="#about">About Me</a></li>
-          <li class="nav__item"><a href="#">Experience</a></li>
+          <li class="nav__item"><a href="#education&experience">Experience</a></li>
           <li class="nav__item"><a href="#work">Portfolio</a></li>
-          <li class="nav__item"><a href="#">Testimonials</a></li>
-          <li class="nav__item"><a href="#">Contact Me</a></li>
+          <li class="nav__item"><a href="#testimonials">Testimonials</a></li>
+          <li class="nav__item"><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
     </header>
@@ -60,10 +73,11 @@
       <h2 class="section__title section__title--about">Who am I?</h2>
       <p class="section__subtitle section__subtitle--about"></p>
       <div class="about-me__body">
+        <h3>Bio</h3>
         <p>
           I'm a knowledge-seeking, passionate, creative and life-loving
           individual that's always open to anything new because I believe in the
-          future but also acknowledges the past. I'm a pretty quiet person but
+          future but I also acknowledge the past. I'm a pretty quiet person but
           when I'm comfortable I'm able to communicate with whoever can
           reciprocate the same energy I give out. I can attribute myself as
           someone that has a lot of philosophies because I love learning and
@@ -79,6 +93,30 @@
           time it was just gaming. I was fascinated with the look and feel of
           it, from the graphics and how they worked.
         </p>
+
+        <h3>Passion Board</h3>
+        <p>
+          <li>Music blogger on Youtube,</li> 
+          <li>Basketball</li>
+          <li>Reading</li>
+          <li>Watching anime and series</li>
+          <li>Animation</li>
+          <li>Gaming</li>
+        </p>
+
+        <h3>Soft Skills</h3>
+        <p>
+          <li>Problem-solving</li>
+          <li>A good listener</li>
+          <li>Team player</li>
+          <li>Easy to communicate to and with.</li>
+        </p>
+        <h3>Technical Skills</h3>
+        <p>
+          <li>Microsoft Office</li>
+          <li>Android</li>
+          <li>Windows</li>
+        </p>
       </div>
       <img
         src="./images/IMG_5323.jpg"
@@ -88,6 +126,45 @@
     </section>
 
     <!--Education and Experience-->
+    <section class="container_for_ed" id="education&experience">
+      <h2 class="Ed-heading">Education & Experience</h2>
+      <!--line-->
+      <div class="line"></div>
+      <!--timeline items-->
+      <div data-aos="fade-left" class="timeline-item item-1">
+        <h2>
+          Rhodes High School - <span> <b>Matriculated</b></span>
+        </h2>
+        <h3>2014 - 2018</h3>
+        <p>
+          Rhodes High School is a secondary institution, located in Mowbray,Cape
+          Town where I did my schooling,from grade 8 to matric(grade 12) and
+          graduated in 2018.
+        </p>
+      </div>
+      <div data-aos="fade-right" class="timeline-item item-2">
+        <h2>Estratweni Mobile Foods -</h2>
+        <h2><span> Waiter</span></h2>
+        <h3>2019 - 2020</h3>
+        <p>
+          I was a waiter at a local gugulethu mobile food establishment called
+          'Estratweni Mobile Food', where I learned to be a better team member,
+          customer service in order to work with different people on a daily
+          basis and leadership skills whenever the oportunity came.
+        </p>
+      </div>
+      <div data-aos="fade-left" class="timeline-item item-3">
+        <h2>Life Choices Academy - <span>Software Developer</span></h2>
+        <h3>2021 - 2022</h3>
+        <p>
+          As of April 2021, I am student/employee for Life Choices, an
+          organisation lcated in Landsdowne, Cape Town, where I am learning
+          about coding and programming, meaning I work on a daily basis with the
+          latest technology & the most capable lecturers in order to broaden my
+          computer literacy.
+        </p>
+      </div>
+    </section>
 
     <!--Portfolio-->
     <section class="my-portfolio" id="work">
@@ -126,7 +203,169 @@
       </div>
     </section>
     <!--Testimonials-->
+
+    <div class="owl-carousel" id="testimonials">
+      <div class="container">
+        <div class="image">
+          <img
+            src="./images/Vuyani Kenelisi (1).JPG"
+            alt="Image of Vuyani Kanelisi"
+          />
+        </div>
+        <div class="text">
+          <h2>Vuyani Kanelisi</h2>
+          <h3>Student</h3>
+          <q>
+              <i>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            accusantium omnis et laboriosam illum architecto reiciendis. Eos
+            voluptate officia cumque soluta ex similique temporibus cupiditate
+            architecto suscipit. Expedita, ab in.    
+              </i>
+            
+          </q>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img
+            src="./images/84304987_639275183500374_5010332779624267776_n.jpg"
+            alt="image of Lerato Kanogoiwa"
+          />
+        </div>
+        <div class="text">
+          <h2>Lerato Kanogoiwa</h2>
+          <h3>Student</h3>
+          <q>
+              <i>
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,
+            perferendis amet libero natus repellat, tenetur impedit sit id eius
+            optio omnis labore ipsam. Quia quo, repellat eum necessitatibus
+            fugiat qui.    
+              </i>
+           
+          </q>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img
+            src="./images/Abdur-Razaa Jardien (3).JPG"
+            alt="Image of Abdur-Raazaq Jardien"
+          />
+        </div>
+        <div class="text">
+          <h2>Abdur-Raazaq Jardien</h2>
+          <h3>Student</h3>
+          <q>
+              <i>
+                 YOUR POES
+          </q>   
+              </i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img
+            src="./images/Godwin.png"
+            alt="Image of Godwin Dzvapatsva"
+          />
+        </div>
+        <div class="text">
+          <h2>Godwin Dzvapatsva</h2>
+          <h3>Lecturer</h3>
+          <q>
+              <i>
+              Kamogelo has a pleasant personality. I am confident that he will continue to be productive and always willing to learn new concepts. Godwin-Head of Curriculum and Learning    
+              </i>
+            
+          </q>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img
+            src="./images/2021-team-jason-wandrag.jpg"
+            alt="Image of Jason Wandrag"
+          />
+        </div>
+        <div class="text">
+          <h2>Jason Wandrag</h2>
+          <h3>Lecturer</h3>
+          <q>
+              <i>
+                  Kamogelo is a cheery, focused developer. He has a great sense of humor and his communication skills are excellent.
+              </i>
+            
+          </q>
+        </div>
+      </div>
+    </div>
     <!--Contact Form-->
+    <form
+      action="https://formspree.io/f/mbjqgjqg"
+      method="POST"
+      id="contact-form"
+    >
+      <h1 class="contact-heading" id="contact">Contact Me</h1>
+      <!--Name-->
+      <div class="contact-info">
+        <label for="name" class="contact-label">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="contact-input"
+          required
+          placeholder="Full Name"
+        />
+      </div>
+
+      <!--Email-->
+      <div class="contact-info">
+        <label for="email" class="contact-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="contact-input"
+          required
+          placeholder="Enter your Email"
+        />
+      </div>
+
+      <!--Number-->
+      <div class="contact-information">
+        <label for="number" class="contact label">Number</label>
+        <input
+          type="tel"
+          name="number"
+          id="tel"
+          class="contact-input"
+          required
+          placeholder="Enter Your Number"
+        />
+      </div>
+
+      <!--Message-->
+      <div class="contact-information">
+        <label for="message" class="contact label"> Message</label>
+        <textarea
+          type="text"
+          name="text"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Message Here"
+          class="contact-input"
+        ></textarea>
+      </div>
+
+      <!--Button-->
+      <div class="contact-button">
+        <button type="submit" class="contact-button">SEND</button>
+      </div>
+    </form>
 
     <!--Footer-->
     <footer class="footer">
@@ -154,5 +393,50 @@
       </ul>
     </footer>
     <script src="./scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+     $(document).ready(function () {
+$(".owl-carousel").owlCarousel({
+items: 1,
+margin: 50,
+loop: true,
+stagePadding: 100,
+dots: false,
+autoplay: true,
+center: true,
+responsive: {
+0: {
+items: 1,
+margin: 0,
+stagePadding: 0,
+},
+300: {
+items: 1,
+margin: 10,
+stagePadding: 10,
+},
+800: {
+items: 1,
+margin: 20,
+stagePadding: 20,
+},
+},
+});
+});
+    </script>
   </body>
 </html>
+
